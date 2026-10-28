@@ -1,0 +1,22 @@
+ROS 2 TURTLEBOT3 ASSIGNMENT — COMMAND LOG
+
+1. Source the ROS 2 Jazzy environment:
+source /opt/ros/jazzy/setup.bash
+
+2. Set the TurtleBot3 model:
+export TURTLEBOT3_MODEL=burger
+
+3. Launch the TurtleBot3 Gazebo world:
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+
+4. Launch Navigation2 with the provided map:
+ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=/opt/ros/jazzy/share/turtlebot3_navigation2/map/map.yaml
+
+5. Open RViz2 with the TurtleBot3 Navigation2 configuration:
+ros2 run rviz2 rviz2 -d /opt/ros/jazzy/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz
+
+NOTES
+- These are commands attempted during the assignment.
+- Some simulation and RViz2 display issues remain unresolved.
+- Do not assume all commands completed successfully.
+- Run ROS commands in an Ubuntu terminal after sourcing the ROS 2 environment.
